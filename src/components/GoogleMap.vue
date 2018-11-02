@@ -1,13 +1,14 @@
 <template>
-    $END$
+    <div class="google-map-api">
+        <div id="map-canvas" class="gmap"></div>
+    </div>
 </template>
 
 <script>
-    export default {
-        name: "GoogleMap"
-    }
+
 </script>
-
-<style scoped>
-
+<style>
+    .gmap{
+        height: 500px;
+    }
 </style>

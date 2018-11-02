@@ -62,9 +62,25 @@
     import SeproWhat from "./components/Sepro-what";
     import SeproWho from "./components/Sepro-who";
     import SeproContact from "./components/Sepro-contact";
+    import GoogleMap from "./components/GoogleMap"
 
     import Vue from 'vue';
     import VueScrollTo from 'vue-scrollto';
+
+    /*    import 'vue-googlemaps/dist/vue-googlemaps.css'
+     import VueGoogleMaps from 'vue-googlemaps'
+
+     Vue.use(VueGoogleMaps, {
+         load: {
+             // Google API key
+             apiKey: 'AIzaSyDgxHXQaibQGyTCXNQRoeIaLMte8JmYaTE',
+             // Enable more Google Maps libraries here
+             libraries: ['places'],
+             // Use new renderer
+             useBetaRenderer: false,
+         },
+     })*/
+
 
     Vue.use(VueScrollTo, {
         container: "body",
@@ -104,7 +120,8 @@
           SeproWhat,
           SeproWho,
           SeproContact,
-        slide,
+          GoogleMap,
+          slide,
         bubble,
         elastic,
         push,

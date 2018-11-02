@@ -6,7 +6,8 @@
 
             <br><br><br><br>
             <div class="column-left">
-                <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/>
+             <!--   <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/> -->
+                <GoogleMap/>
             </div>
             <div class="column-right">
                 <div class="centered-middle">
@@ -36,8 +37,10 @@
 </template>
 
 <script>
+    import GoogleMap from "./GoogleMap";
     export default {
-        name: "Sepro-contact"
+        name: "Sepro-contact",
+        components: {GoogleMap}
     }
 </script>
 
