@@ -12,7 +12,14 @@
                     <img :src="'images/mision.png'"/>
                     <p>Para el 2020 el grupo de investigación SEPRO proyecta ser el centro de investigaciones en logística más importante del país y de Latinoamérica, con ubicaciones en las zonas de mayor actividad logística; vinculando a grupos de investigación interdisciplinarios no sólo de la Universidad Nacional de Colombia sino también de otras universidades tanto nacionales como internacionales, que tengan avances importantes en temas relacionados con la administración de la cadena de suministro.</p>
                 </div><br>
-                <div class="dir-container">
+                <div  data-aos="flip-up"
+                      data-aos-offset="10"
+                      data-aos-delay="50"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-out"
+                      data-aos-mirror="true"
+                      data-aos-once="false"
+                      data-aos-anchor-placement="top-center" class="dir-container">
                     <img :src="'images/vision.png'"/>
                     <p>Para el 2020 el grupo de investigación SEPRO proyecta ser el centro de investigaciones en logística más importante del país y de Latinoamérica, con ubicaciones en las zonas de mayor actividad logística; vinculando a grupos de investigación interdisciplinarios no sólo de la Universidad Nacional de Colombia sino también de otras universidades tanto nacionales como internacionales, que tengan avances importantes en temas relacionados con la administración de la cadena de suministro.</p>
                 </div><br>
