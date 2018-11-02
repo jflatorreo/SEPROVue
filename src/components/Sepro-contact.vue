@@ -6,7 +6,7 @@
 
             <br><br><br><br>
             <div class="column-left">
-                <img :src="'https://dummyimage.com/550/ffffff/000000'"/>
+                <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/>
             </div>
             <div class="column-right">
                 <div class="centered-middle">
