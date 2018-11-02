@@ -8,6 +8,7 @@
 
 <script>
     import Menu from '../Menu';
+
     export default {
       name: 'bubble',
       components: {

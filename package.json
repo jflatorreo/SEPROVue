@@ -9,7 +9,20 @@
         "build-bundle": "vue-cli-service build --target lib --name vue-burger-menu ./src/components/index.js"
     },
     "dependencies": {
-        "vue": "^2.5.17"
+        "@fortawesome/fontawesome-free": "^5.4.2",
+        "@fortawesome/fontawesome-svg-core": "^1.2.7",
+        "@fortawesome/free-brands-svg-icons": "^5.4.2",
+        "@fortawesome/free-solid-svg-icons": "^5.4.2",
+        "@fortawesome/vue-fontawesome": "^0.1.2",
+        "bulma": "^0.7.2",
+        "i": "^0.3.6",
+        "npm": "^6.4.1",
+        "vue": "^2.5.17",
+        "vue-burger-menu": "^1.0.8",
+        "vue-lorem-ipsum": "0.0.1",
+        "vue-scrollto": "^2.13.0",
+        "vue-tweet-embed": "^2.1.2",
+        "vuejs-datepicker": "^1.5.3"
     },
     "author": {
         "name": "Mohit Bajoria",

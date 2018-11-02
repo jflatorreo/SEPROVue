@@ -1,59 +1,51 @@
 <template>
     <div id="app">
+
         <component :is="currentMenu" :right="side === 'right' ? true: false">
             <a href="#">
                 <i class="fa fa-fw fa-star-o"></i>
-                <span>Favourites</span>
+                <span>Home</span>
             </a>
-            <a href="#">
-                <i class="fa fa-fw fa-bell-o"></i>
-                <span>Alerts</span>
+            <a href="#" v-scroll-to="'#sepro-who'">
+                <img style="width: 30px; height: 30px;" :src="'images/qs_icon.png'"/>
+                <span>Quienes Somos</span>
             </a>
-            <a href="#">
-                <i class="fa fa-fw fa-envelope-o"></i>
-                <span>Messages</span>
+            <a href="#" v-scroll-to="'#sepro-what'">
+                <img style="width: 30px; height: 30px;" :src="'images/qh_icon.png'"/>
+                <span>Que Hacemos</span>
             </a>
-            <a href="#">
-                <i class="fa fa-fw fa-comment-o"></i>
-                <span>Comments</span>
+            <a href="#" v-scroll-to="'#sepro-contact'">
+                <img style="width: 30px; height: 30px;" :src="'images/contacto_icon.png'"/>
+                <span>Contacto</span>
             </a>
-            <a href="#">
-                <i class="fa fa-fw fa-bar-chart-o"></i>
-                <span>Analytics</span>
-            </a>
-            <a href="#">
-                <i class="fa fa-fw fa-newspaper-o"></i>
-                <span>Reading</span>
-            </a>
+
         </component>
-        <main id="page-wrap">
-            <img src="https://img.shields.io/npm/dt/vue-burger-menu.svg" /> &emsp;
-            <img src="https://img.shields.io/github/stars/mbj36/vue-burger-menu.svg" />
-            <h1>
-                <a href="https://github.com/mbj36/vue-burger-menu">vue-burger-menu</a> <br/>
-            </h1>
-            <a :class="{ sideButton: true, left: true, active: this.side === 'left' }" @click="changeSide('left')">Left</a>
-            <a :class="{sideButton: true, right: true, active: this.side === 'right' }" @click="changeSide('right')">Right</a>
 
-            <h2 class="description">An off-canvas sidebar vue component with a collection of effects and styles using CSS transitions and SVG path animations.</h2>
 
-            <nav class="demo-buttons">
-                <span v-for="(menu, index) in menus" :key="index">
-                    <span>
-                        <a :class="currentMenu === menu.buttonText.replace(/ +/g, '').toLowerCase() ? {currentDemo:true}: {currentDemo:false}" @click="changeMenu(menu.buttonText)">
-                            {{menu.buttonText}}
-                        </a>
-                    </span>
-                </span>
-            </nav>
-            Inspired by
-            <a href="https://github.com/codrops/OffCanvasMenuEffects">Off-Canvas Menu Effects</a> and
-            <a href="https://github.com/codrops/SidebarTransitions">Sidebar Transitions</a> by Codrops
+        <main >
+            <sepro-header></sepro-header>
+            <sepro-who id="sepro-who"></sepro-who>
+            <sepro-what id="sepro-what"></sepro-what>
+            <sepro-contact id="sepro-contact"></sepro-contact>
         </main>
+
     </div>
 </template>
 
 <script>
+    $(document).ready(function () {
+        $(window).scroll(function(){
+            var ScrollTop = parseInt($(window).scrollTop());
+
+            if (ScrollTop < 100) {
+
+                document.getElementById('menu-button').style.top = "150px";
+            }else{
+                document.getElementById('menu-button').style.top = "0px";
+
+            }
+        });
+    });
     import slide from './components/Menu/slide';
     import bubble from './components/Menu/bubble';
     import elastic from './components/Menu/elastic';
@@ -65,6 +57,28 @@
     import scalerotate from './components/Menu/scaleRotate';
     import stack from './components/Menu/stack';
     import Menu from './components/Menu';
+
+    import SeproHeader from "./components/Sepro-header";
+    import SeproWhat from "./components/Sepro-what";
+    import SeproWho from "./components/Sepro-who";
+    import SeproContact from "./components/Sepro-contact";
+
+    import Vue from 'vue';
+    import VueScrollTo from 'vue-scrollto';
+
+    Vue.use(VueScrollTo, {
+        container: "body",
+        duration: 500,
+        easing: "ease",
+        offset: 0,
+        force: true,
+        cancelable: true,
+        onStart: false,
+        onDone: false,
+        onCancel: false,
+        x: false,
+        y: true
+    })
 
     export default {
       data() {
@@ -86,6 +100,10 @@
         };
       },
       components: {
+          SeproHeader,
+          SeproWhat,
+          SeproWho,
+          SeproContact,
         slide,
         bubble,
         elastic,
@@ -130,7 +148,7 @@
     }
 
     #app {
-      height: 100%;
+     /* height: 100%;*/
     }
 
     a {
@@ -144,11 +162,12 @@
     }
 
     main {
-      height: 100%;
+     /* height: 100%;
       padding: 3em 2em;
       text-align: center;
-      background: #b4bad2;
-      overflow: auto;
+   /*   background: #b4bad2;
+      overflow: auto;*/
+        background: #ffffff;
     }
 
     h1 {
@@ -239,11 +258,11 @@
     // Burger menu custom styles
     //
     .bm-burger-button {
-      position: absolute;
+      position: fixed;
       width: 36px;
       height: 30px;
-      left: 36px;
-      top: 36px;
+      left: 16px;
+      top: 150px;
     }
 
     .right .bm-burger-button {

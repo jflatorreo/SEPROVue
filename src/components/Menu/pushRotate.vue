@@ -8,6 +8,7 @@
 
 <script>
     import Menu from '../Menu';
+
     export default {
       name: 'pushrotate',
       components: {
@@ -24,14 +25,14 @@
           this.openMenu()
           let width = this.$attrs.width ? this.$attrs.width + 'px' : '300px';
 
-          document.body.style.overflowX = 'hidden';
+          /*document.body.style.overflowX = 'hidden';*/
 
           if (this.$attrs.right) {
             document.querySelector(
               '#page-wrap'
             ).style.transform = `translate3d(-${width}, 0px, 0px ) rotateY(15deg)`;
             document.querySelector('#page-wrap').style.transformOrigin =
-              '100% 50% 0px';
+              '50% 50% 0px';
           } else {
             document.querySelector(
               '#page-wrap'
