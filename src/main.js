@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 
 Vue.config.productionTip = false;
 
