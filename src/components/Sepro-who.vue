@@ -34,7 +34,7 @@
                     <br>
                 <div class="trajectory-container">
                     <img v-on:click="toggleClass" v-bind:class="{ active: isActive , inactive: !isActive}" :src="'images/trayectoria.png'"/>
-                    <transition name="bounce">
+                    <transition name="fade">
                     <p v-if="show">El grupo inició sus tareas investigativas en la Sede Palmira de la Universidad Nacional de Colombia, bajo el liderazgo del profesor Wilson Adarme Jaimes. Posteriormente, su alcance incorporó investigadores en las Sedes Bogotá y Orinoquía; se estableció su coordinación en la Sede Bogotá a partir del año 2006 con resultados investigativos a nivel nacional y académicos en la Facultad de Ingeniería, particularmente en el Departamento de Ingeniería de Sistemas e Industrial. El grupo de investigación es soporte del programa de Maestría en Ingeniería industrial creado en 2006 y del Doctorado en Industria y Organizaciones creado en 2010.</p>
                     </transition>
                 </div><br>
