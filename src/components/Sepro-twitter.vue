@@ -2,7 +2,7 @@
 
 
         <div >
-            <a class="twitter-timeline" data-dnt="true" width="350" height="150"  href="https://twitter.com/SEPROLOGISTICA" data-widget-id="401392579922497536">Tweets por @SEPROLOGISTICA</a>
+            <a class="twitter-timeline" data-dnt="true" width="350" height="350"  href="https://twitter.com/SEPROLOGISTICA" data-widget-id="401392579922497536">Tweets por @SEPROLOGISTICA</a>
             <br>
             <a href="https://twitter.com/SEPROLOGISTICA?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="es" data-show-count="false">Follow @SEPROLOGISTICA</a>
             <div style="float:right">

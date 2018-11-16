@@ -40,11 +40,11 @@
                 </div><br>
 
 
-                <h2 class="who-subtittle">Lineas de investigación</h2>
+                <!--<h2 class="who-subtittle">Lineas de investigación</h2>-->
                 <img style="width: 90%" :src="'images/lineas_investigacion.png'"/>
 
         </div>
-        <img :src="'images/investigadores.png'" style="width: 90%"/>
+        <img :src="currentImg_Researchers" @mouseout="currentImg_Researchers = dafaultImage_Researchers" @mouseover="currentImg_Researchers = overImage_Researchers" style="width: 90%"/>
 
     </div>
 </template>
@@ -59,7 +59,10 @@
         },
         data() {
             return {
-                show: false
+                show: false,
+                currentImg_Researchers:"./images/investigadores.png",
+                dafaultImage_Researchers:"./images/investigadores.png",
+                overImage_Researchers:"./images/investigadores_hover.png"
             };
         },
         methods:{

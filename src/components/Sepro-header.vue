@@ -4,20 +4,21 @@
 
     <div class="sepro-header-container" :style="{'background-image': 'url(' + require('../../public/images/home_header_bg.png') + ')'}">
         <div class="header-left">
-            <h1>SEPRO</h1>
+            <img style="width: 100%" :src="'./images/logo-11.png'" />
+            <div class="links">
+                <a v-scroll-to="'#sepro-who'"><img class="qs" id="qs" @mouseleave="qs_reset" @mouseover="qs_hover" :src="'images/qs.png'"/></a>
+                <a v-scroll-to="'#sepro-what'"><img class="qh" id="qh" @mouseleave="qh_reset" @mouseover="qh_hover" :src="'images/qh.png'"/></a>
+                <a v-scroll-to="'#sepro-contact'"><img class="contacto" id="contacto" @mouseleave="contacto_reset" @mouseover="contacto_hover" :src="'images/contacto.png'"/></a>
 
+            </div>
         </div>
         <div class="vl"></div>
         <div class="header-right">
+            <h2>Noticias</h2>
         <sepro-twitter></sepro-twitter>
 
-        </div><br><br><br>
-        <div class="links">
-            <a v-scroll-to="'#sepro-who'"><img class="qs" id="qs" @mouseleave="qs_reset" @mouseover="qs_hover" :src="'images/qs.png'"/></a>
-            <a v-scroll-to="'#sepro-what'"><img class="qh" id="qh" @mouseleave="qh_reset" @mouseover="qh_hover" :src="'images/qh.png'"/></a>
-            <a v-scroll-to="'#sepro-contact'"><img class="contacto" id="contacto" @mouseleave="contacto_reset" @mouseover="contacto_hover" :src="'images/contacto.png'"/></a>
-
         </div>
+
 
 
 
@@ -61,8 +62,8 @@ function a(){
 
 <style scoped>
     .vl {
-        border-left: 6px solid #ffffff;
-        height: 150px;
+        border-left: 2px solid #ffffff;
+        height: 400px;
         position: absolute;
         left: 50%;
         margin-left: -3px;
@@ -70,33 +71,43 @@ function a(){
     }
 .sepro-header-container{
     width: 100%;
-    min-height: 200px;
-    background-size: cover;
+    height: 529px;
+    background-size: contain;
 }
 .header-right{
     float: right;
-    margin-right: 8%;
+    margin-right: 15%;
     min-height: 150px;
     margin-top:50px;
 }
+
+.header-right h2{
+        color: #eecc24;
+    }
 .header-left{
     float: left;
+
     margin-left: 20%;
+
     margin-top: 100px;
+
     color: white;
+
+    width: 25%;
 }
     .links{
-        margin-top: 250px;
-        margin-left: 20%;
+        margin-top: 10%;
+
+
         margin-right: auto;
     }
      .qs, .qh{
-        max-width: 15%;
-         margin-left: 10%;
+        max-width: 25%;
+         margin-left: 8%;
          cursor: pointer;
     }
     .contacto{
-        max-width: 10%;
+        max-width: 18%;
         margin-left: 10%;
         cursor: pointer;
     }

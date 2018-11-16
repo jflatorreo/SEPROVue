@@ -27,6 +27,7 @@
             <sepro-who id="sepro-who"></sepro-who>
             <sepro-what id="sepro-what"></sepro-what>
             <sepro-contact id="sepro-contact"></sepro-contact>
+
         </main>
 
     </div>
@@ -63,6 +64,8 @@
     import SeproWho from "./components/Sepro-who";
     import SeproContact from "./components/Sepro-contact";
     import GoogleMap from "./components/GoogleMap"
+
+
 
     import Vue from 'vue';
     import VueScrollTo from 'vue-scrollto';

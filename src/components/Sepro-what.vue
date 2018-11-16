@@ -3,7 +3,7 @@
 
         <hr>
         <h1 class="what-tittle">
-            <button v-scroll-to="'#sepro-what'" @click="swapComponent('mainwhat')">Atras</button>
+            <img :src="currentImg" @mouseout="currentImg = dafaultImage" @mouseover="currentImg = overImage" v-if="currentComponent!='mainwhat'" v-scroll-to="'#sepro-what'" @click="currentImg = dafaultImage; swapComponent('mainwhat')"/>
             Qué hacemos<img :src="'images/menu_sepro.png'"/></h1>
         <div :is="currentComponent"></div>
 
@@ -17,6 +17,8 @@
        import mainwhat from "./what/main-what";
        import congresses from "./what/congresses"
 
+       import spinner from "./spinner";
+
        export default {
            name: "Sepro-what",
 
@@ -26,16 +28,25 @@
                extensionProjects,
                diplomats,
                congresses,
+               spinner
            },
            data() {
                return {
-                   currentComponent: "mainwhat"
+                   currentComponent: "mainwhat",
+                   currentImg: "./images/goback.png",
+                   dafaultImage: "./images/goback.png",
+                   overImage: "./images/goback_what.png"
                };
            },
            methods: {
                swapComponent: function(component)
                {
-                   this.currentComponent = component;
+                   this.currentComponent = "spinner";
+                   var self = this;
+                   setTimeout(function(){
+                       self.currentComponent = component;
+                   }, 1200);
+
                }
            }
        }
@@ -53,5 +64,7 @@
        }
        .what-tittle img{
            margin-left: 10px;
+           max-width: 40px;
+           vertical-align: middle;
        }
    </style>
