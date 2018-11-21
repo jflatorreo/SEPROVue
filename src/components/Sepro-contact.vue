@@ -1,15 +1,15 @@
 <template>
-    <div style="margin-left: 5%">
+    <div>
+        <hr>
         <h1 class="contact-tittle">Contacto<img :src="'images/menu_sepro.png'"/></h1>
 
-        <div class="row">
+        <div style="width: 90%;margin: auto">
 
-            <br><br><br><br>
-            <div class="column-left">
+            <div class="column-container">
              <!--   <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/> -->
                 <GoogleMap/>
             </div>
-            <div class="column-right">
+            <div class="column-container">
                 <div class="centered-middle">
                 <div class="contact-container">
                     <img :src="'images/telefono.png'"/>
@@ -48,18 +48,14 @@
     .row {
         display: flex;
         margin-bottom: 2%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .column-right {
-        flex: 50%;
-        padding-left:20px;
-        display: flex;
-        justify-content: center;
-    }
-    .column-left{
-        flex: 50%;
-        padding-right:20px;
-        border-right: 1px solid #22783f;
+    .column-container {
+        display: inline-table;
+        width: 50%;
     }
     .contact-tittle{
         color: #22783f;

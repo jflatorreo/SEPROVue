@@ -27,26 +27,17 @@
         </div>
     </div>
     <h2 class="what-subtittle">Investigación</h2>
+    <div style="width: 90%;margin: auto">
     <img    :src="current_invProjects"
             @mouseout="current_invProjects = dafault_invProjects"
             @mouseover="current_invProjects = over_invProjects"
             @click="current_invProjects = dafault_invProjects; swapComponent('investigationProjects')"
-            style="width: 90%;cursor: copy"
+            style="width: 100%;cursor: copy"
             v-scroll-to="'#sepro-what'"/>
-    <!--   <div>
-           <div class="research-project">
-               <h2>Nombre del proyecto</h2>
-               <p><lorem add="3s"></lorem></p>
-               <img :src="'images/logo_proyecto.png'"/>
-           </div>
-           <div class="research-project">
-               <h2>Nombre del proyecto</h2>
-               <p><lorem add="5s"></lorem></p>
-               <img :src="'images/logo_proyecto.png'"/>
-           </div>
-       </div> -->
+    </div>
+    <h2 class="what-subtittle">Extensión</h2>
     <div class="ext-container">
-        <h2 class="what-subtittle">Extensión</h2>
+
         <div>
             <img class="tittle-img" :src="current_extProjects"
                  @mouseout="current_extProjects = dafault_extProjects"
@@ -156,10 +147,15 @@
         float: right;
         background-image: url("../../assets/vermas.png");
         position: relative;
-        height: 48px;
-        width: 99px;
-        background-size: cover;
+        min-height: 35px;
+
+        min-width: 70px;
+
+        background-size: contain;
+
         cursor: pointer;
+
+        width: 9%;
     }
     .more:hover{
         background-image: url("../../assets/vermas_hover.png");
@@ -186,6 +182,7 @@
     }
     .ext-container{
         width: 90%;
+        margin: auto;
     }
     .ext-container div{
         display: inline-table;

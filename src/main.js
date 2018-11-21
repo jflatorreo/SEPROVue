@@ -4,6 +4,10 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 
+
+import {store, Photos, Theater} from "vuejs-carousel"
+
+
 Vue.config.productionTip = false;
 
 new Vue({
@@ -31,6 +35,7 @@ new Vue({
 
         });
     },
+    compponents:{store,Photos,Theater},
   render: h => h(App)
 }).$mount('#app');
 

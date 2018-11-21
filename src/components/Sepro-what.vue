@@ -1,9 +1,14 @@
 <template>
-    <div style="margin-left: 5%">
+    <div >
 
         <hr>
         <h1 class="what-tittle">
-            <img :src="currentImg" @mouseout="currentImg = dafaultImage" @mouseover="currentImg = overImage" v-if="currentComponent!='mainwhat'" v-scroll-to="'#sepro-what'" @click="currentImg = dafaultImage; swapComponent('mainwhat')"/>
+            <img :src="currentImg"
+                 @mouseout="currentImg = dafaultImage"
+                 @mouseover="currentImg = overImage"
+                 v-if="currentComponent!='mainwhat'"
+                 v-scroll-to="'#sepro-what'"
+                 @click="currentImg = dafaultImage; swapComponent('mainwhat')"/>
             Qué hacemos<img :src="'images/menu_sepro.png'"/></h1>
         <div :is="currentComponent"></div>
 

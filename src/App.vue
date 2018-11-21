@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" v-cloak>
 
         <component :is="currentMenu" :right="side === 'right' ? true: false">
             <a href="#">
@@ -40,7 +40,7 @@
 
             if (ScrollTop < 100) {
 
-                document.getElementById('menu-button').style.top = "150px";
+                document.getElementById('menu-button').style.top = "-950px";
             }else{
                 document.getElementById('menu-button').style.top = "0px";
 
@@ -70,19 +70,7 @@
     import Vue from 'vue';
     import VueScrollTo from 'vue-scrollto';
 
-    /*    import 'vue-googlemaps/dist/vue-googlemaps.css'
-     import VueGoogleMaps from 'vue-googlemaps'
-
-     Vue.use(VueGoogleMaps, {
-         load: {
-             // Google API key
-             apiKey: 'AIzaSyDgxHXQaibQGyTCXNQRoeIaLMte8JmYaTE',
-             // Enable more Google Maps libraries here
-             libraries: ['places'],
-             // Use new renderer
-             useBetaRenderer: false,
-         },
-     })*/
+    import {store, Photos, Theater} from 'vuejs-carousel';
 
 
     Vue.use(VueScrollTo, {
@@ -97,9 +85,10 @@
         onCancel: false,
         x: false,
         y: true
-    })
+    });
 
     export default {
+        store,
       data() {
         return {
           menus: {
@@ -119,6 +108,7 @@
         };
       },
       components: {
+          Photos, Theater,
           SeproHeader,
           SeproWhat,
           SeproWho,
@@ -163,7 +153,7 @@
     body {
       height: 100%;
       color: #fffce1;
-      font-family: 'Raleway', Arial, sans-serif;
+        font-size: 1.3vw;
       margin: 0px;
     }
 
@@ -405,5 +395,33 @@
           color: #b8b7ad;
         }
       }
+    }
+
+    [v-cloak] > * { display: none; }
+    [v-cloak]::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 </style>

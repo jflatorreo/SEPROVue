@@ -11,10 +11,9 @@
         </div>
 
         <div class="bm-burger-button" id="menu-button" @click="openMenu">
-            <span class="bm-burger-bars line-style" :style="{background:'#f1f53a', top:15 * (1 * 2) + '%'}" :key="1"></span>
-            <span class="bm-burger-bars line-style" :style="{background:'#f57215', top:15 * (2 * 2) + '%'}" :key="2"></span>
-            <span class="bm-burger-bars line-style" :style="{background:'#ed1c24',top:15 * (3 * 2) + '%'}" :key="3"></span>
-            <span class="bm-burger-bars line-style" :style="{background:'#22783f',top:15 * (4 * 2) + '%'}" :key="4"></span>
+            <span class="bm-burger-bars line-style" :style="{background:'#474241', top:15 * (1 * 2) + '%'}" :key="1"></span>
+            <span class="bm-burger-bars line-style" :style="{background:'#88807b', top:15 * (2 * 2) + '%'}" :key="2"></span>
+            <span class="bm-burger-bars line-style" :style="{background:'#474241',top:15 * (3 * 2) + '%'}" :key="3"></span>
 
             <!--<img :src="'images/menu_sepro.png'"/>-->
         </div>
