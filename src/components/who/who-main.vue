@@ -62,6 +62,7 @@
         name: "who-main",
         data() {
             return {
+                isActive:false,
                 show: false,
                 currentImg_Researchers:"./images/investigadores.png",
                 dafaultImage_Researchers:"./images/investigadores.png",

@@ -156,6 +156,7 @@
         cursor: pointer;
 
         width: 9%;
+        margin-top: 10px;
     }
     .more:hover{
         background-image: url("../../assets/vermas_hover.png");
@@ -192,7 +193,7 @@
     .ext-container div p{
         color: #000;
         text-align: justify;
-        min-height: 200px;
+      /*  min-height: 200px; */
         margin: 20px;
 
     }
@@ -205,4 +206,19 @@
         height: 100%;
         cursor: copy;
     }
+@media screen and (max-width: 47.5em )  {
+    .what-container{
+        width: 100%;
+    }
+    .what-container h2{
+        font-size: 6vw;
+    }
+    .more{
+        min-height: 20px;
+
+        min-width: 40px;
+    }
+
+}
+
 </style>

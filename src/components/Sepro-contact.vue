@@ -3,13 +3,13 @@
         <hr>
         <h1 class="contact-tittle">Contacto<img :src="'images/menu_sepro.png'"/></h1>
 
-        <div style="width: 90%;margin: auto">
+        <div class="columns-container">
 
-            <div class="column-container">
+            <div class="left-column-container">
              <!--   <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/> -->
                 <GoogleMap/>
             </div>
-            <div class="column-container">
+            <div class="right-column-container">
                 <div class="centered-middle">
                 <div class="contact-container">
                     <img :src="'images/telefono.png'"/>
@@ -45,17 +45,10 @@
 </script>
 
 <style scoped>
-    .row {
-        display: flex;
-        margin-bottom: 2%;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
-    .column-container {
-        display: inline-table;
-        width: 50%;
+    .right-column-container {
+        margin-top: 30px;
+        vertical-align: middle;
     }
     .contact-tittle{
         color: #22783f;
@@ -66,6 +59,7 @@
     }
     .contact-subtittle{
         color: #22783f;
+        font-size: 3vw;
     }
     .contact-container{
         display: table;
@@ -74,7 +68,7 @@
         margin-bottom: 20px;
     }
     .contact-container img{
-        width: 30%;
+        width: 19%;
         float: left;
         margin-right: 3px;
     }
@@ -89,8 +83,20 @@
         color: #22783f;
         text-align: center;
         margin-top: 20px;
+        margin-left: -10%;
     }
     .centered-middle{
         align-self: center;
+    }
+.columns-container{
+    position: relative; margin: .5em;
+    vertical-align: middle;
+    margin: auto auto 33px auto;
+    width: 90%;
+}
+    @media screen and (min-width: 47.5em ) {
+        .left-column-container { margin-right: 22.5em; }
+
+        .right-column-container { position: absolute; top: 25%; right: -2%; width: 18.75em; }
     }
 </style>
