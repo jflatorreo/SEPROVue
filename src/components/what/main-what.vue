@@ -2,28 +2,28 @@
 <div>
     <div style="margin: auto; width: 80%;">
             <div  class="what-container">
-                <img  @click="swapComponent('investigationProjects')" :src="'images/pregrado.png'"/>
-                <h2  @click="swapComponent('investigationProjects')" >Cursos de pregrado</h2>
+                <img  @click="swapComponent('undergraduate')" :src="'images/pregrado.png'"/>
+                <h2  @click="swapComponent('undergraduate')" >Cursos de pregrado</h2>
                 <p><lorem add="5s"></lorem></p>
-                <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('investigationProjects')"></div>
+                <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('undergraduate')"></div>
             </div>
             <div class="what-container">
-                <img @click="swapComponent('investigationProjects')" :src="'images/posgrado.png'"/>
-                <h2 @click="swapComponent('investigationProjects')">Cursos de posgrago</h2>
+                <img @click="swapComponent('postgraduate')" :src="'images/posgrado.png'"/>
+                <h2 @click="swapComponent('postgraduate')">Cursos de posgrago</h2>
                 <p><lorem add="5s"></lorem></p>
-                <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('investigationProjects')"></div>
+                <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('postgraduate')"></div>
             </div>
         <div class="what-container">
-            <img @click="swapComponent('investigationProjects')" :src="'images/contribucion.png'"/>
-            <h2 @click="swapComponent('investigationProjects')">Contribución</h2>
+            <img @click="swapComponent('contribution')" :src="'images/contribucion.png'"/>
+            <h2 @click="swapComponent('contribution')">Contribución</h2>
             <p><lorem add="5s"></lorem></p>
-            <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('investigationProjects')"></div>
+            <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('contribution')"></div>
         </div>
         <div class="what-container">
-            <img @click="swapComponent('investigationProjects')" :src="'images/seminarios.png'"/>
-            <h2 @click="swapComponent('investigationProjects')">Seminarios</h2>
+            <img @click="swapComponent('seminars')" :src="'images/seminarios.png'"/>
+            <h2 @click="swapComponent('seminars')">Seminarios</h2>
             <p><lorem add="5s"></lorem></p>
-            <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('investigationProjects')"></div>
+            <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('seminars')"></div>
         </div>
     </div>
     <h2 class="what-subtittle">Investigación</h2>
@@ -139,9 +139,6 @@
         color: #000000;
         cursor: copy;
         margin-bottom: 10px;
-    }
-    .vermas{
-        float: right;
     }
     .more{
         float: right;

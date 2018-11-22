@@ -35,6 +35,7 @@
 
 <script>
     $(document).ready(function () {
+        document.getElementById('menu-button').style.top = "-950px";
         $(window).scroll(function(){
             var ScrollTop = parseInt($(window).scrollTop());
 
@@ -70,7 +71,7 @@
     import Vue from 'vue';
     import VueScrollTo from 'vue-scrollto';
 
-    import {store, Photos, Theater} from 'vuejs-carousel';
+    import {store} from 'vuejs-carousel';
 
 
     Vue.use(VueScrollTo, {
@@ -108,7 +109,6 @@
         };
       },
       components: {
-          Photos, Theater,
           SeproHeader,
           SeproWhat,
           SeproWho,

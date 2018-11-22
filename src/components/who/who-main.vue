@@ -29,7 +29,7 @@
             <br>
             <div class="trajectory-container">
                 <img v-on:click="toggleClass"
-                     v-bind:class="{ active: isActive , inactive: !isActive}"
+                     v-bind:class="{ active: !isActive , inactive: isActive}"
                      :src="'images/trayectoria.png'"/>
 
                 <transition name="fade">
@@ -63,7 +63,7 @@
         data() {
             return {
                 isActive:false,
-                show: false,
+                show: true,
                 currentImg_Researchers:"./images/investigadores.png",
                 dafaultImage_Researchers:"./images/investigadores.png",
                 overImage_Researchers:"./images/investigadores_hover.png"

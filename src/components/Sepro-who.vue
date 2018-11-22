@@ -17,9 +17,7 @@
 
 
     import whomain from "./who/who-main";
-    import researchers from "./who/researchers"
     import gallery from "./who/gallery"
-    import estudiantes from "./who/estudiantes"
 
     import spinner from "./spinner";
 
@@ -27,9 +25,7 @@
         name: "Sepro-who",
         components:{
             whomain,
-            researchers,
             gallery,
-            estudiantes,
             spinner
         },
         data() {
@@ -61,7 +57,7 @@
 -->
 <style scoped>
     .who-tittle{
-        color: #df8c95;
+        color: #fab88a;
         text-align: end;
     }
     .who-tittle img{

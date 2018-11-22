@@ -15,7 +15,7 @@
         <div class="vl"></div>
         <div class="header-right">
             <h2>Noticias</h2>
-        <sepro-twitter></sepro-twitter>
+        <sepro-twitter class="twitter-container"></sepro-twitter>
 
         </div>
 
@@ -67,23 +67,25 @@ function a(){
         position: absolute;
         left: 50%;
         margin-left: -3px;
-        margin-top: 60px;
+        margin-top: -250px;
     }
 .sepro-header-container{
     width: 100%;
     height: 529px;
     background-size: contain;
 }
+/*
 .header-right{
     float: right;
-    margin-right: 15%;
+    margin-left: -335px;
     min-height: 150px;
     margin-top:50px;
-}
+}*/
 
 .header-right h2{
         color: #eecc24;
     }
+/*
 .header-left{
     float: left;
 
@@ -94,7 +96,7 @@ function a(){
     color: white;
 
     width: 25%;
-}
+}*/
     .links{
         margin-top: 10%;
 
@@ -110,6 +112,42 @@ function a(){
         max-width: 18%;
         margin-left: 10%;
         cursor: pointer;
+    }
+
+
+    @media screen and (min-width: 37.5em ) {
+        .sepro-header-container{
+            position: relative;
+            vertical-align: middle;
+            padding-top: 100px;
+        }
+        .header-left { margin-right: 28.5vw;
+            margin-left: 20%;
+            color: white;
+            width: 25%;}
+
+        .header-right { position: absolute; top: 8%; right: 10%; width: 29.75vw; }
+
+        .twitter-container{
+         height: 350px;
+        }
+
+    }
+
+    @media screen and (max-width: 37.5em ) {
+
+        .vl {
+            display: none;
+        }
+        .sepro-header-container{
+            min-height: 170vw;
+            padding-top: 20px;
+        }
+        .twitter-container{
+            height: 220px;
+        }
+        .header-right { margin-top: 30px }
+        .header-left { width: 80%;margin: auto;margin-top: 20px }
     }
 
 </style>

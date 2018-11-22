@@ -16,11 +16,14 @@
    </template>
 
    <script>
+       import postgraduate from "./what/academia/postgraduate";
+       import undergraduate from "./what/academia/undergraduate";
+       import congresses from "./what/congresses";
+       import diplomats from "./what/diplomats";
        import extensionProjects from "./what/extensionProjects";
        import investigationProjects from "./what/investigationProjects"
-       import diplomats from "./what/diplomats";
        import mainwhat from "./what/main-what";
-       import congresses from "./what/congresses"
+
 
        import spinner from "./spinner";
 
@@ -29,10 +32,12 @@
 
            components:{
                mainwhat,
-               investigationProjects,
-               extensionProjects,
-               diplomats,
                congresses,
+               diplomats,
+               extensionProjects,
+               investigationProjects,
+               postgraduate,
+               undergraduate,
                spinner
            },
            data() {
