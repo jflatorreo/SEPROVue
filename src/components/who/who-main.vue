@@ -1,8 +1,9 @@
 <template>
     <div>
         <div>
-            <h2 class="who-subtittle">Direccionamiento</h2>
+
             <div style="width: 90%;margin: auto">
+                <h2 class="who-subtittle">Direccionamiento</h2>
                 <div class="dir-container"><!-- data-aos="flip-up"
                      data-aos-offset="10"
                      data-aos-delay="50"
@@ -41,10 +42,11 @@
 
             <!--<h2 class="who-subtittle">Lineas de investigación</h2>-->
 
-            <img style="width: 100%" :src="'images/lineas_investigacion.png'"/>
+
 
         </div>
         <div style="width: 90%; margin: auto">
+            <img style="width: 100%" :src="'images/lineas_investigacion.png'"/>
             <img :src="currentImg_Researchers"
                  @mouseout="currentImg_Researchers = dafaultImage_Researchers"
                  @mouseover="currentImg_Researchers = overImage_Researchers"

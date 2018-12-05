@@ -59,6 +59,7 @@
     .who-tittle{
         color: #fab88a;
         text-align: end;
+        style:"width: 90%;"
     }
     .who-tittle img{
         margin-left: 10px;

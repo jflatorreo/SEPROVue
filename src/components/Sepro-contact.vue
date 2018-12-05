@@ -8,6 +8,12 @@
             <div class="left-column-container">
              <!--   <img style="width:100%" :src="'https://dummyimage.com/550/ffffff/000000'"/> -->
                 <GoogleMap/>
+                <div class="contact-data">
+                    <p>Universidad Nacional de Colombia <br>
+                        Carrera 45 No 26-85 - Edificio Antonio Nariño<br>
+                        Oficina 115<br>
+                        Bogotá D.C. - Colombia</p>
+                </div>
             </div>
             <div class="right-column-container">
                 <div class="centered-middle">
@@ -21,12 +27,7 @@
                     <h2 class="contact-subtittle">Escríbanos</h2>
                     <p><a href="mailto:sepro_fibog@unal.edu.co">sepro_fibog@unal.edu.co</a></p>
                 </div>
-                    <div class="contact-data">
-                        <p>Universidad Nacional de Colombia <br>
-                            Carrera 45 No 26-85 - Edificio Antonio Nariño<br>
-                            Oficina 115<br>
-                            Bogotá D.C. - Colombia</p>
-                    </div>
+
                 </div>
 
 

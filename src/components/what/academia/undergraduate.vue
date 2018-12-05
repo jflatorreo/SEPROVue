@@ -39,7 +39,7 @@
         text-align: justify;
     }
     .course-container h2{
-        text-align: end;
+
         color: #000000;
         cursor: copy;
         margin-bottom: 10px;

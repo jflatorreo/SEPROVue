@@ -1,25 +1,30 @@
 <template>
-    <div>
+    <div style="width: 90%;margin: auto">
         <div class="breadcrumb-container">
-            <h2 v-if="n>0">{{this.component_labels[components[n-1]]}}</h2>
+            <a href="" v-scroll-to="'#sepro-who'" v-on:click.prevent="swapComponent('left')"><h2 v-if="n>0">{{this.component_labels[components[n-1]]}}</h2></a>
             <!-- <h1 v-if="n>0"><--</h1>-->
-         <h1>{{this.component_labels[currentGallery]}} </h1>
+         <h1 style="margin-left: 10px;margin-right: 10px">{{this.component_labels[components[n]]}} </h1>
             <!-- <h1 v-if="components[n+1]"></h1>-->
-        <h2>{{this.component_labels[components[n+1]]}}</h2>
+            <a href="" v-scroll-to="'#sepro-who'" v-on:click.prevent="swapComponent('right')"><h2>{{this.component_labels[components[n+1]]}}</h2></a>
         </div>
 
         <div v-if="n>0" class="left-row">
-            <img :src="'./images/left.png'"
+            <img :src="currentImg_left"
                  @click="swapComponent('left')"
-
-            />
+                 v-scroll-to="'#sepro-who'"
+                 @mouseout="currentImg_left = dafaultImage_left"
+                 @mouseover="currentImg_left = overImage_left"/>
         </div>
 
 <div :is="currentGallery" class="carousel"></div>
 
         <div v-if="components[n+1]" class="rigth-row">
-            <img :src="'./images/rigth.png'"
-                 @click="swapComponent('right')"/>
+            <img :src="currentImg_right"
+                 @click="swapComponent('right')"
+                 v-scroll-to="'#sepro-who'"
+                 @mouseout="currentImg_right = dafaultImage_right"
+                 @mouseover="currentImg_right = overImage_right"/>
+
         </div>
 
     </div>
@@ -66,7 +71,13 @@
                     magister_students:"Estudiantes de Maestría",
                     aiming_professionals:"Profesionales de apoyo",
                     seeder:"Semillero"
-                }
+                },
+                currentImg_right: "./images/right.png",
+                dafaultImage_right: "./images/right.png",
+                overImage_right: "./images/right_hover.png",
+                currentImg_left: "./images/left.png",
+                dafaultImage_left: "./images/left.png",
+                overImage_left: "./images/left_hover.png",
             };
         },
 
@@ -111,13 +122,16 @@
         margin-left: 5%;
         margin-right: 5%;
         vertical-align: middle;
+        margin-top: 3%;
     }
     .breadcrumb-container h1, .breadcrumb-container h2{
         display: inline-block;
         color: #f68712;
+
     }
     .breadcrumb-container h2{
         text-transform: initial;
         font-size: small;
+
     }
 </style>

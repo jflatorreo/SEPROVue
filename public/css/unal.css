@@ -118,7 +118,7 @@ ul, ol {margin-left: 1.2em;}
 }
 
 #services .indicator {
-	background-color: #94b43b; background-image: url(../images/backServices.png); background-position: 0 0; cursor: pointer; height: 126px; left: -34px; position: absolute; top: 150px; width: 34px;
+	background-color: #94b43b; background-image: url(../images/backServices.png); background-position: 0 0; cursor: pointer; height: 126px; left: -34px; position: absolute; top: 250px; width: 34px;
 }
 
 #services .indicator:hover {

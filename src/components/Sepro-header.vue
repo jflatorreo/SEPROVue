@@ -3,6 +3,11 @@
 
 
     <div class="sepro-header-container" :style="{'background-image': 'url(' + require('../../public/images/home_header_bg.png') + ')'}">
+       <a href="http://168.176.86.226:8085/share" target="_blank"> <img class="repo"
+            :src="currentImg_repo"
+            @mouseout="currentImg_repo = dafaultImage_repo"
+            @mouseover="currentImg_repo = overImage_repo"
+       /></a>
         <div class="header-left">
             <img style="width: 100%" :src="'./images/logo-11.png'" />
             <div class="links">
@@ -14,7 +19,7 @@
         </div>
         <div class="vl"></div>
         <div class="header-right">
-            <h2>Noticias</h2>
+            <h2>Noticias -<a href="/sss">Boletin Informativo</a></h2>
         <sepro-twitter class="twitter-container"></sepro-twitter>
 
         </div>
@@ -28,12 +33,17 @@
 </template>
 
 <script>
-function a(){
-    alert("a");
-}
+
     import SeproTwitter from "./Sepro-twitter";
 
     export default {
+        data() {
+            return {
+                currentImg_repo: "./images/repo.png",
+                dafaultImage_repo: "./images/repo.png",
+                overImage_repo: "./images/repo_hover.png"
+            };
+        },
         components: {
             SeproTwitter
         },
@@ -67,7 +77,7 @@ function a(){
         position: absolute;
         left: 50%;
         margin-left: -3px;
-        margin-top: -250px;
+        margin-top: -19%;
     }
 .sepro-header-container{
     width: 100%;
@@ -82,21 +92,19 @@ function a(){
     margin-top:50px;
 }*/
 
-.header-right h2{
+.header-right h2, a{
         color: #eecc24;
     }
-/*
-.header-left{
-    float: left;
+.repo{
+    width: 7%;
 
-    margin-left: 20%;
+    top: 11px;
 
-    margin-top: 100px;
+    position: absolute;
 
-    color: white;
+    right: -22px;
+}
 
-    width: 25%;
-}*/
     .links{
         margin-top: 10%;
 

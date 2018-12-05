@@ -26,18 +26,16 @@
             <div class="more" v-scroll-to="'#sepro-what'" @click="swapComponent('seminars')"></div>
         </div>
     </div>
-    <h2 class="what-subtittle">Investigación</h2>
+    <h2 class="what-subtittle">Proyectos</h2>
     <div style="width: 90%;margin: auto">
+
     <img    :src="current_invProjects"
             @mouseout="current_invProjects = dafault_invProjects"
             @mouseover="current_invProjects = over_invProjects"
             @click="current_invProjects = dafault_invProjects; swapComponent('investigationProjects')"
             style="width: 100%;cursor: copy"
             v-scroll-to="'#sepro-what'"/>
-    </div>
-    <h2 class="what-subtittle">Extensión</h2>
-    <div class="ext-container">
-
+        <div class="ext-container">
         <div>
             <img class="tittle-img" :src="current_extProjects"
                  @mouseout="current_extProjects = dafault_extProjects"
@@ -46,7 +44,10 @@
                  v-scroll-to="'#sepro-what'"/>
             <p><lorem add="3-5s"></lorem></p>
 
-        </div>
+        </div></div>
+    </div>
+    <h2 class="what-subtittle">Extensión</h2>
+    <div class="ext-container">
         <div>
             <img class="tittle-img" :src="current_diplomats"
                  @mouseout="current_diplomats = dafault_diplomats"
@@ -115,6 +116,9 @@
 
     .what-subtittle{
         color: #ed1c24;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
     }
     .what-container{
         display: inline-table;
@@ -181,6 +185,7 @@
     .ext-container{
         width: 90%;
         margin: auto;
+        text-align: center;
     }
     .ext-container div{
         display: inline-table;
