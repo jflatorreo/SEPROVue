@@ -1,6 +1,3 @@
 [
-  {   "id": "1",   "thumbnail": "./images/researchers/tumbails/sem_1.jpg",   "photo": "./images/researchers/photos/sem_1.jpg",   "name": "Erika Herrera",   "body": "sem_1",   "created_at": "11/29/2018",   "comments": [] },
-  {   "id": "2",   "thumbnail": "./images/researchers/tumbails/sem_2.jpg",   "photo": "./images/researchers/photos/sem_2.jpg",   "name": "Diego Alejandro Herrera",   "body": "sem_2",   "created_at": "11/29/2018",   "comments": [] },
-  {   "id": "3",   "thumbnail": "./images/researchers/tumbails/sem_3.jpg",   "photo": "./images/researchers/photos/sem_3.jpg",   "name": "Francy Solangi Martin",   "body": "sem_3",   "created_at": "11/29/2018",   "comments": [] },
-  {   "id": "4",   "thumbnail": "./images/researchers/tumbails/sem_4.jpg",   "photo": "./images/researchers/photos/sem_4.jpg",   "name": "Andrés Santiago García",   "body": "sem_4",   "created_at": "11/29/2018",   "comments": [] }
-]
+{   "id": "2",   "thumbnail": "./images/researchers/tumbails/sem_2.jpg",   "photo": "./images/researchers/photos/sem_2.jpg",   "name": "Diego Alejandro Herrera",   "body": "Innovacción y política pública",   "created_at": "11/29/2018",   "comments": [{"text":"Estudiante Ingeniería Industrial. Universidad Nacional de Colombia"}] },
+{   "id": "4",   "thumbnail": "./images/researchers/tumbails/sem_4.jpg",   "photo": "./images/researchers/photos/sem_4.jpg",   "name": "Andrés Santiago García",   "body": "Teoría de juegos y negociación",   "created_at": "11/29/2018",   "comments": [{"text":"Estudiante Ingeniería Industrial. Universidad Nacional de Colombia"}] }]

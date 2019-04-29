@@ -3,21 +3,33 @@
     <div  class="course-container">
         <img  @click="" :src="'images/posgrado.png'"/>
         <h2 class="name" @click="" >Logística aplicada a inventarios y almacenamiento</h2>
-        <h2 class="date">2017 II</h2>
+        <h2 class="date">2019 I</h2>
         <p><lorem add="5s"></lorem></p>
     </div>
     <div  class="course-container">
         <img  @click="" :src="'images/posgrado.png'"/>
         <h2 class="name" @click="" >Logística aplicada a redes de distribución y transporte</h2>
-        <h2 class="date">2017 II</h2>
+        <h2 class="date">2019 I</h2>
         <p><lorem add="5s"></lorem></p>
     </div>
     <div  class="course-container">
         <img  @click="" :src="'images/posgrado.png'"/>
-        <h2 class="name" @click="" >Logística aplicada a inventarios y almacenamiento</h2>
-        <h2 class="date">2017 II</h2>
+        <h2 class="name" @click="" >Tendencias actuales de la cadena de suministro</h2>
+        <h2 class="date">2019 I</h2>
         <p><lorem add="5s"></lorem></p>
     </div>
+        <div  class="course-container">
+            <img  @click="" :src="'images/posgrado.png'"/>
+            <h2 class="name" @click="" >Investigación y desarrollo en ingeniería industrial</h2>
+            <h2 class="date">2019 I</h2>
+            <p><lorem add="5s"></lorem></p>
+        </div>
+        <div  class="course-container">
+            <img  @click="" :src="'images/posgrado.png'"/>
+            <h2 class="name" @click="" >Administración de la Cadena de Suministro (Manizales) </h2>
+            <h2 class="date">2019 I</h2>
+            <p><lorem add="5s"></lorem></p>
+        </div>
     </div>
 </template>
 

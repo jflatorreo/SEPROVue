@@ -1,5 +1,9 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router';
 import App from './App.vue'
+import routes from './router/index';
+
+
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
@@ -8,9 +12,17 @@ import '../node_modules/timeline-vuejs/dist/timeline-vuejs.css'
 import {store, Photos, Theater} from "vuejs-carousel"
 
 
+Vue.use(VueRouter);
+
+
 Vue.config.productionTip = false;
 
-new Vue({
+const router = new VueRouter({
+    routes: routes,
+});
+
+const app= new Vue({
+    router,
     created () {
         AOS.init({
             // Global settings:
@@ -38,4 +50,3 @@ new Vue({
     compponents:{store,Photos,Theater},
   render: h => h(App)
 }).$mount('#app');
-

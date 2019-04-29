@@ -1,9 +1,67 @@
 <template>
-    <div  class="course-container">
+    <div>
+        <div class="course-container">
         <img  @click="" :src="'images/pregrado.png'"/>
         <h2  @click="" >Logística</h2>
-        <h2 class="date">2017 II</h2>
-        <p><lorem add="5s"></lorem></p>
+        <h2 class="date">2019 I</h2>
+        <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Modelos y simulación</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Optimización</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Procesos estocásticos</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Taller de simulación de procesos de manufactura y servicios</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Teoría de la decisión</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Taller de ingeniería de la producción</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Taller de diseño de plantas </h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
+
+        <div class="course-container">
+            <img  @click="" :src="'images/pregrado.png'"/>
+            <h2  @click="" >Taller de creatividad</h2>
+            <h2 class="date">2019 I</h2>
+            <p> </p>
+        </div>
     </div>
 </template>
 

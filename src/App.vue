@@ -1,32 +1,32 @@
 <template>
     <div id="app" v-cloak>
 
+
+
         <component :is="currentMenu" :right="side === 'right' ? true: false">
-            <a href="#">
+            <router-link to="/home" v-scroll-to="'#app'">
                 <i class="fa fa-fw fa-star-o"></i>
                 <span>Home</span>
-            </a>
-            <a href="#" v-scroll-to="'#sepro-who'">
+            </router-link>
+            <router-link to="" v-if="$route.fullPath==='/home'" v-scroll-to="'#sepro-who'">
                 <img style="width: 30px; height: 30px;" :src="'images/qs_icon.png'"/>
                 <span>Quienes Somos</span>
-            </a>
-            <a href="#" v-scroll-to="'#sepro-what'">
+            </router-link>
+            <router-link to="" v-if="$route.fullPath=='/home'" v-scroll-to="'#sepro-what'">
                 <img style="width: 30px; height: 30px;" :src="'images/qh_icon.png'"/>
                 <span>Que Hacemos</span>
-            </a>
-            <a href="#" v-scroll-to="'#sepro-contact'">
+            </router-link>
+            <router-link to="" v-if="$route.fullPath=='/home'" v-scroll-to="'#sepro-contact'">
                 <img style="width: 30px; height: 30px;" :src="'images/contacto_icon.png'"/>
                 <span>Contacto</span>
-            </a>
+            </router-link>
 
         </component>
 
 
-        <main >
+        <main>
             <sepro-header></sepro-header>
-            <sepro-who id="sepro-who"></sepro-who>
-            <sepro-what id="sepro-what"></sepro-what>
-            <sepro-contact id="sepro-contact"></sepro-contact>
+            <router-view id="router-view"></router-view>
 
         </main>
 
@@ -61,9 +61,7 @@
     import Menu from './components/Menu';
 
     import SeproHeader from "./components/Sepro-header";
-    import SeproWhat from "./components/Sepro-what";
-    import SeproWho from "./components/Sepro-who";
-    import SeproContact from "./components/Sepro-contact";
+
     import GoogleMap from "./components/GoogleMap"
 
 
@@ -72,6 +70,10 @@
     import VueScrollTo from 'vue-scrollto';
 
     import {store} from 'vuejs-carousel';
+
+
+
+
 
 
     Vue.use(VueScrollTo, {
@@ -87,6 +89,8 @@
         x: false,
         y: true
     });
+
+
 
     export default {
         store,
@@ -110,9 +114,6 @@
       },
       components: {
           SeproHeader,
-          SeproWhat,
-          SeproWho,
-          SeproContact,
           GoogleMap,
           slide,
         bubble,
@@ -162,12 +163,12 @@
     }
 
     a {
-      color: #4e4a46;
+      color: #c94e50;
       text-decoration: none;
 
       &:hover,
       &:focus {
-        color: #c94e50;
+        color: #4e4a46;
       }
     }
 

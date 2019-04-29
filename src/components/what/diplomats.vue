@@ -2,8 +2,21 @@
     <div>
         <div  class="course-container">
             <img  @click="" :src="'images/diplomados.png'"/>
-            <h2 class="name" @click="" >Diplomado en logística y gestion de la cadena de abastecimiento</h2>
-            <p><lorem add="5s"></lorem></p>
+
+            <p>
+
+                El grupo de investigación SEPRO, ha realizado hasta la fecha un total de 18 promociones del Diplomado en Logística y Gestión de la Cadena de Suministro. El público participante pertenece al sector público, privado y comunidad en general. A continuación se mencionan algunas de las entidades que han participado:
+            </p><br><p>
+            <ul style="list-style-type: initial">
+            <li>Secretaría de Movilidad</li>
+            <li> Transportes Sánchez Polo</li>
+            <li> Universidad Nacional de Ingeniería del Perú</li>
+            <li> Ministerio de Defensa</li>
+            <li> Servicio Nacional de Aprendizaje (SENA)</li>
+            <li> Cabildo Indígena KITE-KIWE</li>
+            <li> Cabildo Indígena INTI-YAKU</li>
+            </ul>
+            </p>
         </div>
 
     </div>

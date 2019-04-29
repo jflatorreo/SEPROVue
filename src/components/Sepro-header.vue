@@ -19,7 +19,7 @@
         </div>
         <div class="vl"></div>
         <div class="header-right">
-            <h2>Noticias -<a href="/sss">Boletin Informativo</a></h2>
+            <h2>Noticias -<router-link v-scroll-to="'#router-view'" to="/boletin">Boletin Informativo</router-link></h2>
         <sepro-twitter class="twitter-container"></sepro-twitter>
 
         </div>

@@ -22,6 +22,8 @@
        import diplomats from "./what/diplomats";
        import extensionProjects from "./what/extensionProjects";
        import investigationProjects from "./what/investigationProjects"
+       import seminars from "./what/academia/seminars"
+       import catedra from "./what/academia/catedra"
        import mainwhat from "./what/main-what";
 
 
@@ -38,6 +40,8 @@
                investigationProjects,
                postgraduate,
                undergraduate,
+               seminars,
+               catedra,
                spinner
            },
            data() {
