@@ -20,7 +20,7 @@
             <img @click="swapComponent('contribution')" :src="'images/contribucion.png'"/>
             <h2 @click="swapComponent('contribution')">Contribución</h2>
             <p>
-                El grupo de investigación SEPRO cuenta con clasificación B en Colciencias, con una contribución de más de 30 proyectos, 66 artículos en revistas especializadas, 4 libros y 10 capítulos de libro.
+                El grupo de investigación SEPRO cuenta con clasificación A en Colciencias, con una contribución de más de 30 proyectos, 66 artículos en revistas especializadas, 4 libros y 10 capítulos de libro.
 
 
             </p>

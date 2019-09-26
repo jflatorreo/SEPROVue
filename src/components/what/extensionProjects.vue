@@ -110,7 +110,7 @@
             <p>
 
                 Desarrollo de un piloto en las ciudades de Buenaventura, Cali Medellín y Barranquilla el cual debe contener la evaluación de la implementación de cargue y descargue nocturno que evalúe el desempeño logístico, ambiental, la competitividad, la movilidad, la seguridad y las externalidades de la operación logística.
-                <br><br>Entidad Contratante: Ministerio de Transporte
+                <br><br>Entidad Contratante: Yooooooooooe
                 <br><br>Año: 2017
 
             </p>
