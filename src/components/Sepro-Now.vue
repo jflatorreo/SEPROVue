@@ -10,7 +10,7 @@
                     </th>
                     <th>
                         <div>
-                            <img  @click="" :src="'images/saludchoco.png'" width="100%"/>
+                            <img  @click="" :src="'images/cundi.png'" width="100%"/>
                         </div>  
                     </th>
                 </tr>
@@ -18,25 +18,12 @@
                 <tr>
                     <th>
                         <div>
-                            <img  @click="" :src="'images/saludchoco.png'" width="100%"/>
+                            <img  @click="" :src="'images/colombiaproductiva.png'" width="100%"/>
                         </div>
                     </th>
                     <th>
                         <div>
-                            <img  @click="" :src="'images/saludchoco.png'" width="100%"/>
-                        </div>  
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        <div>
-                            <img  @click="" :src="'images/saludchoco.png'" width="100%"/>
-                        </div>
-                    </th>
-                    <th>
-                        <div>
-                            <img  @click="" :src="'images/saludchoco.png'" width="100%"/>
+                            <img  @click="" :src="'images/PAE.png'" width="100%"/>
                         </div>  
                     </th>
                 </tr>
