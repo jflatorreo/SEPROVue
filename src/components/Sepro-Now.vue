@@ -27,6 +27,20 @@
                         </div>  
                     </th>
                 </tr>
+
+
+                <tr>
+                    <th>
+                        <div>
+                            <img  @click="" :src="'images/arauca.png'" width="100%"/>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <img  @click="" :src="'images/supersolidaria.png'" width="100%"/>
+                        </div>  
+                    </th>
+                </tr>
             </tbody>
         </table>
         
